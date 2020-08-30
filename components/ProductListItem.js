@@ -9,11 +9,11 @@ export default function ProductListItem(props) {
     return(
         <View style={StyleSheet.shadow}>
             <View style={StyleSheet.container}>
-                <Image style={styles.img}/>
+            <Image style={styles.img} source={{uri: product.images[0].url}}/>
                 <View style={styles.info}>
                     <Text style={styles.name}>{product.name}</Text>
                     <View style={styles.priceRow}>
-                        <Text style={styles.price}></Text>
+                    <Text style={styles.price}>{product.price}</Text>
                         <TouchableOpacity onPress={onAddToCartClick}>
                             <Text style={styles.cartText}>MUA +</Text>
                         </TouchableOpacity>
