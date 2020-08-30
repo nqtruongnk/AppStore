@@ -4,11 +4,11 @@ import {
     Text
 } from 'react-native'
 
-function Cart(){
+function Settings(){
     return(
         <View>
-            <Text>Cart</Text>
+            <Text>Stings</Text>
         </View>
     );
 }
-export default Cart
+export default Settings

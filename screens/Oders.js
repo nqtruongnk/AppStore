@@ -4,11 +4,11 @@ import {
     Text
 } from 'react-native'
 
-function Cart(){
+function Oders(){
     return(
         <View>
-            <Text>Cart</Text>
+            <Text>Oders</Text>
         </View>
     );
 }
-export default Cart
+export default Oders
