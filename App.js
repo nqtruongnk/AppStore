@@ -28,27 +28,14 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import Categories from './screens/Categories'
 import Category from './screens/Category';
-import Cart from './screens/Cart';
-import Oders from './screens/Oders';
-import Settings from './screens/Settings'
+import AppNavigation from './AppNavigation';
+
 
 const stack = createStackNavigator()
 const tab = createBottomTabNavigator()
 function App() {
   return(
-    <NavigationContainer>
-      <stack.Navigator>
-        <stack.Screen name='Categories' component={Categories} options={{ title: 'Categories' }}/>
-        <stack.Screen name='Category' component={Category}
-          options={({route})=>({title: route.params.name})}/>
-      </stack.Navigator>
-      <tab.Navigator>
-        <tab.Screen name='Shopping' component={Categories}/>
-        <tab.Screen name='Gio hang' component={Cart}/>
-        <tab.Screen name='Don hang' component={Oders}/>
-        <tab.Screen name='Settings' component={Settings}/>
-      </tab.Navigator>
-    </NavigationContainer>
+    <AppNavigation/>
   )
 }
 const styles = StyleSheet.create({

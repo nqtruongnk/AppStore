@@ -1,14 +1,14 @@
 import React from 'react'
 import {
     View,
-    Text
+    Text,
 } from 'react-native'
 
 function Oders(){
     return(
         <View>
-            <Text>Oders</Text>
+            <Text>Oder Home</Text>
         </View>
-    );
+    )
 }
 export default Oders

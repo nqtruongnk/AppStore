@@ -1,14 +1,14 @@
 import React from 'react'
 import {
     View,
-    Text
+    Text,
 } from 'react-native'
 
 function Cart(){
     return(
         <View>
-            <Text>Cart</Text>
+            <Text>Cart Home</Text>
         </View>
-    );
+    )
 }
 export default Cart

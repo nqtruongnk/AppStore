@@ -9,6 +9,7 @@ function Settings(){
         <View>
             <Text>Stings</Text>
         </View>
-    );
+    )
 }
+
 export default Settings
