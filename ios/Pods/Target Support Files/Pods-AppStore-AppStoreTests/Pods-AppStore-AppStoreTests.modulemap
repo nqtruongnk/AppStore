@@ -1,0 +1,6 @@
+module Pods_AppStore_AppStoreTests {
+  umbrella header "Pods-AppStore-AppStoreTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
